@@ -1,23 +1,24 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# NOTE: Tracking all files per request — ignore rules disabled.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# dependencies (disabled)
+# /node_modules
+# /.pnp
+# .pnp.js
 
-# testing
-/coverage
+# testing (disabled)
+# /coverage
 
-# production
-/build
+# production (disabled)
+# /build
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# misc (disabled)
+# .DS_Store
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
