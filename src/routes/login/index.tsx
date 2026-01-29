@@ -21,14 +21,14 @@ function Login(): JSX.Element {
             <div
   style={{
     position: 'absolute',
-    left: -100,         // adjust horizontal position
-    top: -400,          // adjust vertical position
+    left: -100,         
+    top: -400,          
     width: 900,
     height: 1000,
     overflow: 'hidden',
-    pointerEvents: 'none', // allow clicks through to UI
+    pointerEvents: 'none', 
     zIndex: 0,
-    opacity: 0.12,     // subtle background
+    opacity: 0.12,     
 
   }}
 >
@@ -40,7 +40,7 @@ function Login(): JSX.Element {
       height: 'auto',
       objectFit: 'contain',
       display: 'block',
-      marginLeft: '-450px',   // CORRECT: camelCase + unit
+      marginLeft: '-450px',   
       marginTop: '-100px',
 
     }}
