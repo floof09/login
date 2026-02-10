@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      scale: {
+        '135': '1.35',
+      },
+    },
   },
   plugins: [],
   corePlugins: {

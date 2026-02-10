@@ -15,8 +15,9 @@ function LoginForm(): JSX.Element {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <Stack gap={16}>
+    <form onSubmit={handleSubmit} style={{ width: '100%', maxWidth: '100%' }}>
+      <Stack gap={16} style={{ width: '100%', maxWidth: '100%' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
         <TextInput
           label="Student Number"
           placeholder="Enter your student number"
@@ -27,7 +28,11 @@ function LoginForm(): JSX.Element {
           autoComplete="username"
           size="md"
           radius="md"
+          className="mb-6"
+          style={{ width: '100%', maxWidth: 565 }}
         />
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
 
         <PasswordInput
           label="Password"
@@ -39,29 +44,36 @@ function LoginForm(): JSX.Element {
           autoComplete="current-password"
           size="md"
           radius="md"
-        />
+          className="w-full"
+          style={{ width: '100%', maxWidth: 565, }}
 
+
+        />
+        </div>
         <Anchor
           component="button"
           type="button"
           size="sm"
+          mr = {'xl'}
           onClick={handleForgotPassword}
           style={{ textAlign: 'right', color: '#2563EB' }}
+          
         >
           Forgot Password?
         </Anchor>
-
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Button
           type="submit"
           fullWidth
           size="md"
           radius="md"
-          style={{ backgroundColor: '#2563EB' }}
+          style={{ backgroundColor: '#2563EB',width: '100%', maxWidth: 565 }}
+          className="mt-10 w-full"
         >
           Log In
         </Button>
-
-        <Text size="sm" c="dimmed" ta="center" style={{ whiteSpace: 'nowrap' }}>
+        </div>
+        <Text size="sm" c="dimmed" ta="center" style={{ whiteSpace: 'wrap' }}>
           Note: Temporary identifiers (OTP) sent to your email serve as your login credentials.
         </Text>
       </Stack>
