@@ -10,16 +10,17 @@ function Login(): JSX.Element {
           style={{
             minHeight: '100vh',
             display: 'flex',
-            alignItems: 'center',
+            alignItems: 'stretch',
             justifyContent: 'center',
             background: 'linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #ffffff 100%)',
             padding: '20px',
             position: 'relative',
+            width: '100%',
           }}
         >
           {/* Top-left decorative logo */}
           <div
-            style={{ position: 'absolute', right: '34vw', bottom: '30vh', width: '1000px', height: '1000px', overflow: 'hidden', pointerEvents: 'none', 
+            style={{ position: 'absolute', right: '65vw', bottom: '410px', width: '1000px', height: '1000px', overflow: 'hidden', pointerEvents: 'none', 
               zIndex: 0, opacity: 0.12,
             }}
           >
@@ -27,12 +28,13 @@ function Login(): JSX.Element {
               src="/Schuler_Logo.png"
               alt="Schüler Track background"
               style={{
-                width: '3500px',
-                height: '1500px',
-                objectFit: 'contain',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: '5% center',
                 display: 'block',
-                marginLeft: '-18vw',
-                marginTop: '-9vw',
+                margin: 0,
+                transform: 'scale(1.1)', 
               }}
             />
           </div>
@@ -40,7 +42,7 @@ function Login(): JSX.Element {
           <Box
             style={{
               position: 'absolute',
-              left: 500,
+              left: '60vw', // Adjust this vw value for responsive horizontal position.
               top: 600,
               width: '1000px',
               height: '1000px',
@@ -60,19 +62,22 @@ function Login(): JSX.Element {
                 objectPosition: '5% center',
                 display: 'block',
                 margin: 0,
-                transform: 'scale(1.1)', // zooms in by 10%
+                transform: 'scale(1.1)', 
               }}
             />
           </Box>
           {/* Main content card */}
-          <div className="mt-8 w-full flex flex-col items-center justify-center min-h-screen px-4 sm:px-6">
+          <div
+            className="mt-8 w-full flex flex-col items-center justify-center min-h-screen px-4 sm:px-6"
+            style={{ maxWidth: 'none', width: '100%' }}
+          >
             <Paper
               p={{ base: 16, sm: 32 }}
               radius={20}
-              w="100%"
+              w="100%" 
               miw={320}
-              maw={760}
-              mih={{base: 600, sm: 700, md: 750 }}
+              maw="34.5vw"
+              mih={{base: 600, sm: 700, md: 700 }} // Adjust these min heights to make the card taller/shorter.
               style={{
                 backgroundColor: '#fff',
                 boxShadow: '0 8px 40px rgba(0, 0, 0, 0.2)',

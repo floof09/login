@@ -29,7 +29,7 @@ function LoginForm(): JSX.Element {
           size="md"
           radius="md"
           className="mb-6"
-          style={{ width: '100%', maxWidth: 565 }}
+          style={{ width: '100%' }} // Inputs expand to full card width.
         />
         </div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -45,7 +45,7 @@ function LoginForm(): JSX.Element {
           size="md"
           radius="md"
           className="w-full"
-          style={{ width: '100%', maxWidth: 565, }}
+          style={{ width: '100%' }} // Inputs expand to full card width.
 
 
         />
@@ -53,7 +53,7 @@ function LoginForm(): JSX.Element {
         <Anchor
           component="button"
           type="button"
-          size="sm"
+          size="md"
           mr = {'xl'}
           onClick={handleForgotPassword}
           style={{ textAlign: 'right', color: '#2563EB' }}
@@ -67,7 +67,7 @@ function LoginForm(): JSX.Element {
           fullWidth
           size="md"
           radius="md"
-          style={{ backgroundColor: '#2563EB',width: '100%', maxWidth: 565 }}
+          style={{ backgroundColor: '#2563EB', width: '100%' }} // Button expands to full card width.
           className="mt-10 w-full"
         >
           Log In
