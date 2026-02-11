@@ -67,19 +67,19 @@ function Login(): JSX.Element {
           {/* Main content card */}
           <div className="mt-8 w-full flex flex-col items-center justify-center min-h-screen px-4 sm:px-6">
             <Paper
-              p={16}
+              p={{ base: 16, sm: 32 }}
               radius={20}
-              w={{ base: '100%', sm: '90%', md: '70%', lg: '34vw' }}
+              w="100%"
               miw={320}
+              maw={760}
+              mih={{base: 600, sm: 700, md: 750 }}
               style={{
                 backgroundColor: '#fff',
                 boxShadow: '0 8px 40px rgba(0, 0, 0, 0.2)',
                 borderRadius: '20px',
                 zIndex: 10,
                 position: 'relative',
-                minHeight: 'min(750px, 92vh)',
               }}
-              className="w-full min-w-[320px] sm:min-w-[420px] max-w-[760px] lg:max-w-[34vw] min-h-[600px] sm:min-h-[700px] p-4 sm:p-8"
             >
               <Stack gap={24} style={{ width: '100%', maxWidth: '100%' }}>
                 {/* Logo and Title Section */}
